@@ -10,6 +10,7 @@ import 'leaflet.markercluster';
 
 import { CardModule } from 'primeng/card';
 
+import { Router } from '@angular/router';
 import { Marker as MarkerType } from '../../types/marker.type';
 import { RequestService } from '../../services/request.service';
 import { CurrentLocationService } from '../../services/location.service';
@@ -48,7 +49,7 @@ export class HomeComponent {
       return divIcon({
         iconUrl: '/assets/marker-icon.svg',
         iconSize: [96, 90],
-        html: `<img src="/assets/marker-icon.svg"/> <span class="bg-[#5F2234] text-xl absolute bottom-1 right-2 w-8 h-8 rounded-full flex justify-center items-center">${count}</span>`,
+        html: `<img src="/assets/marker-icon.svg" alt="Amazing Artur Symbolbild"/> <span class="bg-amazing-bordeaux text-xl absolute bottom-1 right-2 w-8 h-8 rounded-full flex justify-center items-center">${count}</span>`,
         className: 'relative'
       });
     }

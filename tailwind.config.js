@@ -5,10 +5,20 @@ const tailwindLogical = require('tailwindcss-logical');
 module.exports = {
   content: ['./src/**/*.{html,ts}'],
   theme: {
+    fontFamily: {
+      sans: [
+        'Inter var',
+        'sans-serif'
+      ]
+    },
     extend: {
       colors: {
-        'surface-50': 'var(--surface-50)',
+        'amazing-bordeaux': '#5F2234',
+        'amazing-bordeaux-light': '#aa6b7e'
       },
+      boxShadow: {
+        inputs: '0 0 0 .2rem #aa6b7e'
+      }
     },
   },
   plugins: [
