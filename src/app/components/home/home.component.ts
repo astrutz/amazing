@@ -8,9 +8,6 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { LeafletMarkerClusterModule } from '@asymmetrik/ngx-leaflet-markercluster';
 import 'leaflet.markercluster';
 
-import { CardModule } from 'primeng/card';
-
-import { Router } from '@angular/router';
 import { Marker as MarkerType } from '../../types/marker.type';
 import { RequestService } from '../../services/request.service';
 import { CurrentLocationService } from '../../services/location.service';
@@ -20,7 +17,6 @@ import { CreateMarkerComponent } from '../create-marker/create-marker.component'
   selector: 'app-home',
   standalone: true,
   imports: [
-    CardModule,
     CreateMarkerComponent,
     LeafletModule,
     LeafletMarkerClusterModule,

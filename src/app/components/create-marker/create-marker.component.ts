@@ -1,18 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { NgClass, NgIf } from '@angular/common';
-import { CardModule } from 'primeng/card';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { TabViewModule } from 'primeng/tabview';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { ButtonModule } from 'primeng/button';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RequestService } from '../../services/request.service';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ProgressSpinnerModule } from 'primeng/progressspinner';
-import { TagModule } from 'primeng/tag';
 
 import { AmazingLocation } from "../amazing-location/amazing-location.component";
 import { PictureUpload } from "../picture-upload/picture-upload.component";
@@ -26,17 +16,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
   templateUrl: './create-marker.component.html',
   host: { 'class': 'fixed block max-is-prose block-end-1 inset-inline-0 mli-auto is-full bg-slate-700 rounded' },
   imports: [
-    CardModule,
-    InputTextModule,
-    InputGroupModule,
-    TabViewModule,
-    TabMenuModule,
-    InputNumberModule,
-    ButtonModule,
     ReactiveFormsModule,
-    FileUploadModule,
-    ProgressSpinnerModule,
-    TagModule,
     NgClass,
     NgIf,
     AmazingLocation,
