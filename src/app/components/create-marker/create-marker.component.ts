@@ -14,7 +14,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
   selector: 'create-marker',
   standalone: true,
   templateUrl: './create-marker.component.html',
-  host: { 'class': 'fixed block max-is-prose block-end-1 inset-inline-0 mli-auto is-full bg-slate-700 rounded' },
+  host: { 'class': 'fixed block max-is-prose block-end-1 inset-inline-0 mli-auto is-full bg-amazing-bordeaux rounded-2xl' },
   imports: [
     ReactiveFormsModule,
     NgClass,

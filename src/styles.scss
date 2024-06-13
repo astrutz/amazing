@@ -34,7 +34,7 @@ input[type=number] {
 }
 
 button {
-  @apply border rounded-2xl py-1.5 px-2;
+  @apply border rounded-xl py-1.5 px-2 transition-colors duration-200;
 }
 
 button:disabled {
